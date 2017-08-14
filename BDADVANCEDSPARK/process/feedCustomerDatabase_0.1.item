@@ -113,7 +113,7 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="90001" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="User_id"/>
       <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;s1&quot;,10000,1) "/>
@@ -128,7 +128,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="InscriptionDate"/>
       <elementValue elementRef="ARRAY" value="TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2015-12-31&quot;) "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
-      <elementValue elementRef="ARRAY" value=""/>
+      <elementValue elementRef="ARRAY" value="&quot;company&quot;+Numeric.random(1,50)+&quot;.com&quot; "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="telephone"/>
       <elementValue elementRef="ARRAY" value="Numeric.random(5550000,5559999) "/>
     </elementParameter>
